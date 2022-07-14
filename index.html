@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="overlay overlay-lg"></div>
+            <nav>
+                <div class="container">
+                    <div class="header-nav">
+                        <ul>
+                            <li><a href="#home" title="home">Home</a></li>
+                            <li><a href="#project" title="project">Project</a></li>
+                            <li><a href="#about" title="about">About</a></li>
+                            <li><a href="#skills" title="skills">Skills</a></li>
+                            <li><a href="#contact" title="contact">Contact</a></li>
+                            <li><a href="#hire-me" title="hire-me" class="active">Hire me</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-bar">
+                        <div class="menu">
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-content">
+                <div class="container grid-col">
+                    <div class="column-1">
+                        <h1 class="header-title">Pham Nguyen Duy Tien</h1>
+                        <p class="text">
+                            With the knowledge of what's in school and courses. 
+                            I have always wanted to become a Front-End Developer. 
+                            Having a solid knowledge of HTML, CSS, Javascript 
+                            a little of PHP, MySQL, plus skills I hone every day. 
+                        </p>
+                        <a href="CV/index.html" type="button" class="btn" target="_blank">Download CV</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="assets/images/pndt.jpeg" class="avatar" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="project" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="What I Do">Projects</h3>
+                    <p class="text">
+                        Some projects I have done, you can check out for reference.
+                    </p>
+                </div>
+
+                <div class="section-body">
+                    <div class="cards">
+                        <div class="card-item">
+                            <div class="card" data-card="UI/UX">
+                                <div class="card-content">
+                                    <img src="assets/images/design-icon.png" class="icon" alt="">
+                                    <h3 class="title-item">Web Design</h3>
+                                    <div class="text" style="text-align: center;">
+                                        Movie, Poster, News 
+                                    </div>
+                                    <a href="#project-website" class="btn small" data-tab-target="#project-website" type="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card-item">
+                            <div class="card" data-card="AI">
+                                <div class="card-content">
+                                    <img src="assets/images/code-icon.png" class="icon" alt="">
+                                    <h3 class="title-item">Artificial Intelligence</h3>
+                                    <div class="text">
+                                        Detecting stages of Alzheimer disease using CNN algorithm.
+                                    </div>
+                                    <a href="#project-ai" class="btn small" data-tab-target="#project-ai" type="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="card-item">
+                            <div class="card" data-card="IoT">
+                                <div class="card-content">
+                                    <img src="assets/images/app-icon.png" class="icon" alt="">
+                                    <h3 class="title-item">Embedded and IoT</h3>
+                                    <div class="text">
+                                        Using sensor SDS11, SI7021 measures temperature and humidity.
+                                    </div>
+                                    <a href="#project-iot" class="btn small" data-tab-target="#project-iot" type="button">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-project">
+                        <div id="project-website" data-tab-content>
+                            <div class="project-content">
+                                <div class="card-close">
+                                    <i class="fa-solid fa-x"></i>
+                                </div>
+                                <ul>
+                                    <li><a href="https://phamnguyenduytien.github.io/movieweb/index.html" title="movie" target="_blank">Movies</a></li>
+                                    <li><a href="https://phamnguyenduytien.github.io/posterdemo/index.html" title="poster" target="_blank">Poster demo</a></li>
+                                    <li><a href="https://phamnguyenduytien.github.io/newsweb/index.html" title="news" target="_blank">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="project-ai" data-tab-content>
+                            <div class="project-content">
+                                <div class="card-close">
+                                    <i class="fa-solid fa-x"></i>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="https://youtu.be/Ik3oKi1LC4M" title="link-youtube" target="_blank">Detecting stages of Alzheimer disease</a>
+                                        <span></br>-> <a href="https://github.com/PhamNguyenDuyTien/Final_Project_AI" title="link-github" target="_blank">Source Code Github</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div id="project-iot" data-tab-content>
+                            <div class="project-content">
+                                <div class="card-close">
+                                    <i class="fa-solid fa-x"></i>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="https://youtu.be/2op-6Yt_PBM" title="link-youtube" target="_blank">Measures temperature and humidity by using sensors</a>
+                                        <span></br>-> <a href="https://github.com/PhamNguyenDuyTien/FanControlWithWeatherStation" title="link-github" target="_blank">Source Code Github</a></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Who Am I">About me</h3>
+                </div>
+
+                <div class="section-body grid-col">
+                    <div class="column-1">
+                        <h3 class="title-item">Hello, I'm Tien</h3>
+                        <p class="text">
+                            Hello, I'm Duy Tien, a student of Ho Chi Minh City University of Technology and Education.
+                            These are my skills and I am improving them day by day.
+                        </p>
+                        <div id="skills" class="skills">
+                            <div class="skill html">
+                                <div class="skill-title">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill css">
+                                <div class="skill-title">CSS, SCSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill js">
+                                <div class="skill-title">Javascript, Jquery</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="45%"></div>
+                                </div>
+                            </div>
+                            <div class="skill back-end">
+                                <div class="skill-title">PHP, C#</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="15%"></div>
+                                </div>
+                            </div>
+                            <div class="skill database">
+                                <div class="skill-title">MySQL, server</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="10%"></div>
+                                </div>
+                            </div>
+                            <div class="skill embedded">
+                                <div class="skill-title">Embedded</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill design-3d">
+                                <div class="skill-title">SolidWorks, Inventor, Cad</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="assets/images/3x4avt.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificate">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="What I have">Certificate</h3>
+                </div>
+                <div class="section-body">
+                    <div class="grid-3-col">
+                        <div class="image">
+                            <img src="assets/images/AI-certificate-1.png" alt="">
+                            <span class="desc-certificate">Artificial Intelligence</span> 
+                        </div>
+                        <div class="image">
+                            <img src="assets/images/cad-certificate.jpg" alt="">
+                            <span class="desc-certificate">AutoCad</span> 
+                        </div>
+                        <div class="image">
+                            <img src="assets/images/cad-certificate.jpg" alt="">
+                            <span class="desc-certificate">AutoCad</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3 class="title">Get in touch</h3>
+                        <p class="text">
+                            You can contact me with the following information.
+                        </p>
+                        <div class="information-wrap">
+                            <div class="infomation">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <p class="info-text">Bien Hoa, Dong Nai</p>
+                            </div>
+                            
+                            <div class="infomation">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </div>
+                                <p class="info-text">pndtien8121@gmail.com</p>
+                            </div>
+                            
+                            <div class="infomation">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <p class="info-text">(+84) 393 6151 88</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 class="title">Contact me</h3>
+                        <div class="row">
+                            <input type="text" class="contact-input" placeholder="First Name">
+                            <input type="text" class="contact-input" placeholder="Last Name">
+                        </div>
+                        <div class="row">
+                            <input type="number" class="contact-input" placeholder="Phone">
+                            <input type="email" class="contact-input" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <textarea name="message" class="contact-input textarea" placeholder="Message"></textarea>
+                        </div>
+                        <a href="#" type="submit" class="btn">Send</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="grid-4">
+                <div class="grid-4-col footer-about">
+                    <h3 class="title-item">About</h3>
+                    <p class="text">
+                        My Portfolio 
+                    </p>
+                </div>
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-item">Links</h3>
+                    <ul>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#certificate">Certificate</a></li>
+                    </ul>
+
+                </div>
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-item">Projects</h3>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">AI</a></li>
+                        <li><a href="#">IoT</a></li>
+                    </ul>
+                </div>
+                <div class="grid-4-col footer-newsletter">
+                    <h3 class="title-item">Subcribe</h3>
+                    <p class="text">
+                        Enter your email to contact me.
+                    </p>
+                    <div class="footer-input-wrap">
+                        <input type="email" class="footer-input" placeholder="Email">
+                        <a href="#" class="input-arrow">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="copyright">
+                    <p class="text">
+                        Copyright &copy; 2022 All rights reserved | Made by <span>PhamNguyenDuyTien</span>
+                    </p>
+                </div>
+                <div class="followme-wrap">
+                    <div class="followme">
+                        <h3>Follow me</h3>
+                        <span class="footer-line"></span>
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="back-btn-wrap">
+                        <a href="#" class="back-btn" type="btn">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

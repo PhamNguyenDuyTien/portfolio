@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Reset CSS */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+
+.container-cv{
+    display: flex;
+    margin: 50px auto;
+    max-width: 700px;
+    height: 900px;
+    animation: fade ease 1s;
+    box-shadow: 1px 4px 10px 6px #ccc;
+}
+
+html{
+    font-family: 'Arimo';
+}
+
+body{
+    background-image: linear-gradient( to bottom right, #38B6FF , #5271FF, #004AAD );
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 20px;
+    font-style: italic;
+}
+
+h3{
+    font-size: 18px;
+}
+
+li{
+    list-style: none;
+}
+
+hr{
+    margin: 5px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.aside-right{
+    width: 44%;
+    height: 100%;
+    padding: 16px;
+    background: #002866;
+}
+
+.aside-left{
+    width: 56%;
+    height: 100%;
+    padding: 20px;
+    color: #000;
+    background: #fff;
+    text-align: justify;
+    line-height: 20px;
+}
+/* Aside right */
+.aside-right header{
+    height: 25%;
+}
+
+.aside-right main{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside-right, .aside-right a{
+    color: #fff;
+}
+
+.aside-right h2{
+    margin-top: 10px;;
+}
+
+.img{
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 160px;
+}
+
+.education{
+    text-align: justify;
+}
+
+.contact, .education{
+    line-height: 25px;
+}
+
+/* Aside left */
+.aside-left h3{
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.aside-left li{
+    margin-top: 5px;
+}
+
+.aside-left .projects span{
+    font-weight: bold;
+}
+
+.aside-left a{
+    font-weight: normal;
+    color: #000;
+}
+
+@keyframes fade {
+    from {
+        /* Ban đầu ở phía trên đỉnh */
+        opacity: 0.5;
+        transform: translateY(-150px);
+    }
+
+    to {
+        /* Lúc sau tụt về giữa */
+        transform: translateY(0);
+
+    }
+}
